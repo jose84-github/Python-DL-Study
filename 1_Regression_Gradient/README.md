@@ -4,7 +4,6 @@
 
     F(x) = wx + b라고 가정하자
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/263ff8cb-1f60-4e71-885f-d3c7fe963159/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/263ff8cb-1f60-4e71-885f-d3c7fe963159/Untitled.png)
 
 - Hypothesis (가설)
 
@@ -22,8 +21,6 @@
 
     → 음수와 양수를 더해서 0으로 수렴하면 좋은 모델이라고 판단할 수 있어서 보통은 절대값을 씌우거나 아래와 같이 제곱을 하여 평균을 취한다
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b539ec43-b12e-44e6-9101-c975e1d10f6f/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b539ec43-b12e-44e6-9101-c975e1d10f6f/Untitled.png)
-
 - Linear Regression은 이 Cost Function 수치를 Minimize하는 것을 목표로 한다
 
 2. How to minimize Cost Function
@@ -40,7 +37,6 @@
 - 따라서 4 - Learning Rate x Gradient하여 가장 작은 Cost 값을 찾는 것이 Gradient Decent의 방식이다
 - 하지만, 이렇게 수치해석적으로 분석하면 소수점이 날아가는 등의 문제가 있을 수 있으므로, 편미분을 통해서 공식을 한번에 변형시키면 w값만 대입하면, 쉽게 구할 수 있다
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f596d16d-da2d-4aa7-b12e-3a7c7a3b2fac/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f596d16d-da2d-4aa7-b12e-3a7c7a3b2fac/Untitled.png)
 
                              미분 과정을 웹사이트에서 계산해주는 곳도 있음
 
@@ -55,17 +51,12 @@
 
 예제) 앞의 예제에서 Quiz H(x) = Wx + b라 할때, 만약, 변수가 여러 개 $(X_1, X_2, X_3)$로 Y값을 예측한다고 한다면, Hypothesis와 Cost Function은 다음과 같이 정의할 수 있다
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b1df127a-c022-429a-8c69-74c91fd01276/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b1df127a-c022-429a-8c69-74c91fd01276/Untitled.png)
 
 이때, $H(X_1, X_2, X_3...X_n)$을 n차원 벡터라 할 수 있고, 이를 선형대수로 표현하면 다음과 같이 표현할 수 있다
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/96578509-de2c-4ad6-a5f9-929818325664/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/96578509-de2c-4ad6-a5f9-929818325664/Untitled.png)
 
 - (여기서 XW로 해주는 까닭은 행렬 계산시, WX는 전치행렬로 바꾸어주어야 하는 번거로움이 있기 때문이다)
 - 이를 활용하여 다양한 레코드들의 Matrix값을 구할 수 있다
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e79aaf7d-9328-40fc-be16-112d88d25d59/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e79aaf7d-9328-40fc-be16-112d88d25d59/Untitled.png)
 
 그리고 Y값이 한개가 아니라 여러개일 경우, n차원의 값들을 예측해야 하는데, 이때는 w값을 n차원으로 변경시키면 된다
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/85c36730-c0c7-412d-936b-0df5e5a040c8/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/85c36730-c0c7-412d-936b-0df5e5a040c8/Untitled.png)
