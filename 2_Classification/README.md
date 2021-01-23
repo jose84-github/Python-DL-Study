@@ -1,11 +1,3 @@
-# 딥러닝 홀로서기#6
-
-주제 : Binary Classification / Multinomial Classification
-
-링크 : 
-
-[[#6.Lec] Binary / Multi-Label Classification - 딥러닝 홀로서기](https://www.youtube.com/watch?v=is_Vw-aJMg4&list=PLSAJwo7mw8jn8iaXwT4MqLbZnS-LJwnBd&index=5&t=13s)
-
 ## 1. Classification
 
 - Classification : Supervised Learning의 한 종류로 Input X를 통해 Y를 분류하는 Machine Learning 기법
